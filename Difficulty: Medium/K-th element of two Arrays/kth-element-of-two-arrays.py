@@ -1,7 +1,9 @@
 #User function Template for python3
 
+
 class Solution:
-    def kthElement(self, k, arr1, arr2):
+
+    def kthElement(self, arr1, arr2, k):
         c=0
         i,j=0,0
         while(i<len(arr1) and j<len(arr2)):
@@ -43,6 +45,8 @@ class Solution:
         
 
 
+
+
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
@@ -58,8 +62,8 @@ def main():
         a = [int(x) for x in input().strip().split()]
         b = [int(x) for x in input().strip().split()]
         ob = Solution()
-        print(ob.kthElement(k, a, b))
-
+        print(ob.kthElement(a, b, k))
+        print("~")
         T -= 1
 
 
